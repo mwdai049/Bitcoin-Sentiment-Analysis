@@ -1,4 +1,5 @@
 import requests
+from datetime import datetime, timedelta
 
 
 class YouTubeAPI:
@@ -25,12 +26,16 @@ class YouTubeAPI:
 
     def get_top_videos(self, channel_id, query, max_results=3):
         url = f"{self.base_url}/search"
+        three_days_ago = (datetime.utcnow() -
+                          timedelta(days=3)).isoformat("T") + "Z"
+        print(three_days_ago)
         params = {
             'part': 'snippet',
             'channelId': channel_id,
             'q': query,
             'maxResults': max_results,
             'type': 'video',
+            'publishedAfter': three_days_ago,
             'key': self.api_key
         }
         response = requests.get(url, params=params)

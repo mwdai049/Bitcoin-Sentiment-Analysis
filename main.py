@@ -30,6 +30,6 @@ def main(company_name, channel_name):
 
 
 if __name__ == "__main__":
-    company_name = "Google"
+    company_name = "Tesla"
     channel_name = "YahooFinance"
     main(company_name, channel_name)
