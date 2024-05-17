@@ -34,7 +34,7 @@ def main(company_name, channel_name):
             calc = statistics.mean(average_score)
             print(f"Average Score:{calc}")
             display_sentiment(calc)
-            print("\\n")
+            print("\n")
 
     except ValueError as e:
         print(e)
