@@ -12,16 +12,28 @@ def main(company_name, channel_name):
         channel_id = youtube_api.get_channel_id()
         video_ids = youtube_api.get_top_videos(channel_id, company_name)
         transcript_processor = TranscriptProcessor()
-        analyzer = SentimentAnalyzer()
-
+         analyzer = SentimentAnalyzer()
+        def display_sentiment(score):
+            n_bar=int(score*20)
+            bars = "|" * n_bar
+            sentiment = 'Negative      Neutral      Positive'
+            print(bars)
+            print(sentiment)
+            return 
         for video_id in video_ids:
             transcript = transcript_processor.get_transcript(video_id)
             processed_transcript = transcript_processor.preprocess_transcript(
                 transcript)
-
+            average_score=[]
             for segment in processed_transcript:
                 sentiment = analyzer.analyze_sentiment(segment)
-                print(f"Sentiment for segment: {segment}\n{sentiment}")
+                #print(f"Sentiment for segment: {segment}\n{sentiment}")
+                average_score.append(sentiment['score'])
+            calc=statistics.mean(average_score)
+            print(f"Average Score:{calc}")
+            display_sentiment(calc)
+            print("\\n")
+
 
     except ValueError as e:
         print(e)
