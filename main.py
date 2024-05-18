@@ -8,7 +8,7 @@ import statistics
 def main(company_name, channel_name):
     youtube_api = YouTubeAPI(
         'REDACTED_API', channel_name)
-
+    
     try:
         channel_id = youtube_api.get_channel_id()
         video_ids = youtube_api.get_top_videos(channel_id, company_name)
