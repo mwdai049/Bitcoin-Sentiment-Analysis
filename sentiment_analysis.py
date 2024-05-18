@@ -6,7 +6,7 @@ import requests
 
 class SentimentAnalyzer:
     API_URL = "https://api-inference.huggingface.co/models/mr8488/distilroberta-finetuned-financial-news-sentiment-analysis"
-    HEADERS = {"Authorization": f"Bearer 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"}
+    HEADERS = {"Authorization": f"Bearer REDACTED_API"}
 
     def query(self, payload):
         response = requests.post(

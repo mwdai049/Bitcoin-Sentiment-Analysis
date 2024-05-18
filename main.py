@@ -26,6 +26,7 @@ def main(company_name, channel_name):
 
         for day_videos in videos_by_day:
             print(f"Processing videos for date: {day_videos['date']}")
+            final_avg=0
             for video_id in day_videos['videos']:
                 transcript = transcript_processor.get_transcript(video_id)
                 processed_transcript = transcript_processor.preprocess_transcript(
@@ -37,9 +38,11 @@ def main(company_name, channel_name):
                 if average_score:
                     calc = statistics.mean(average_score)
                     print(f"Average Score: {calc}")
-                    display_sentiment(calc)
+                    final_avg+=calc
+                    #display_sentiment(calc)
                     print("\n")
-
+            print(final_avg/3)
+            display_sentiment(final_avg/3)
     except ValueError as e:
         print(e)
     except requests.exceptions.RequestException as e:
