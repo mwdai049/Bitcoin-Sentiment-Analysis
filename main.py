@@ -26,8 +26,9 @@ def main(company_name, channel_name):
 
         for day_videos in videos_by_day:
             print(f"Processing videos for date: {day_videos['date']}")
-            final_avg=0
+            final_avg = 0
             for video_id in day_videos['videos']:
+                print(f"Processing video ID: {video_id}")
                 transcript = transcript_processor.get_transcript(video_id)
                 processed_transcript = transcript_processor.preprocess_transcript(
                     transcript)
@@ -38,8 +39,8 @@ def main(company_name, channel_name):
                 if average_score:
                     calc = statistics.mean(average_score)
                     print(f"Average Score: {calc}")
-                    final_avg+=calc
-                    #display_sentiment(calc)
+                    final_avg += calc
+                    # display_sentiment(calc)
                     print("\n")
             print(final_avg/3)
             display_sentiment(final_avg/3)
@@ -52,4 +53,4 @@ def main(company_name, channel_name):
 if __name__ == "__main__":
     company_name = "Tesla"
     channel_name = "YahooFinance"
-    main(company_name, channel_name)
+main(company_name, channel_name)

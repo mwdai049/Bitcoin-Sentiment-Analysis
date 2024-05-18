@@ -47,7 +47,7 @@ class YouTubeAPI:
         business_days = []
         current_day = datetime.utcnow()
         while len(business_days) < num_days:
-            if current_day.weekday() < 5:  # Monday to Friday are considered business days
+            if current_day.weekday() < 5:
                 business_days.append(current_day)
             current_day -= timedelta(days=1)
         return business_days
