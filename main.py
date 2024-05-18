@@ -8,13 +8,8 @@ import statistics
 def main(company_name, channel_name):
     youtube_api = YouTubeAPI(
         'REDACTED_API', channel_name)
-    
-    try:
-        channel_id = youtube_api.get_channel_id()
-        video_ids = youtube_api.get_top_videos(channel_id, company_name)
-        transcript_processor = TranscriptProcessor()
-        analyzer = SentimentAnalyzer()
 
+    try:
         def display_sentiment(score):
             n_bar = int(score*20)
             bars = "|" * n_bar
@@ -22,19 +17,28 @@ def main(company_name, channel_name):
             print(bars)
             print(sentiment)
             return
-        for video_id in video_ids:
-            transcript = transcript_processor.get_transcript(video_id)
-            processed_transcript = transcript_processor.preprocess_transcript(
-                transcript)
-            average_score = []
-            for segment in processed_transcript:
-                sentiment = analyzer.analyze_sentiment(segment)
-                # print(f"Sentiment for segment: {segment}\n{sentiment}")
-                average_score.append(sentiment['score'])
-            calc = statistics.mean(average_score)
-            print(f"Average Score:{calc}")
-            display_sentiment(calc)
-            print("\n")
+
+        channel_id = youtube_api.get_channel_id()
+        videos_by_day = youtube_api.get_videos_for_business_days(
+            channel_id, company_name, num_days=10, videos_per_day=3)
+        transcript_processor = TranscriptProcessor()
+        analyzer = SentimentAnalyzer()
+
+        for day_videos in videos_by_day:
+            print(f"Processing videos for date: {day_videos['date']}")
+            for video_id in day_videos['videos']:
+                transcript = transcript_processor.get_transcript(video_id)
+                processed_transcript = transcript_processor.preprocess_transcript(
+                    transcript)
+                average_score = []
+                for segment in processed_transcript:
+                    sentiment = analyzer.analyze_sentiment(segment)
+                    average_score.append(sentiment['score'])
+                if average_score:
+                    calc = statistics.mean(average_score)
+                    print(f"Average Score: {calc}")
+                    display_sentiment(calc)
+                    print("\n")
 
     except ValueError as e:
         print(e)
