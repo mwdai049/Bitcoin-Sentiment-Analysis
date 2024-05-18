@@ -41,7 +41,7 @@ def main(company_name, channel_name):
                     final_avg+=calc
                     #display_sentiment(calc)
                     print("\n")
-            print(final_avg/3)
+            print(f"Final Average:{final_avg/3}")
             display_sentiment(final_avg/3)
     except ValueError as e:
         print(e)
