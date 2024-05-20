@@ -2,37 +2,30 @@ from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, NoTranscriptFound
 import isodate
 from datetime import datetime, timedelta
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from transformers import pipeline
 from news_sentiment import NewsSentimentAnalyzer
+import os
 
-
-# Replace with your API key
 API_KEY = 'REDACTED_API'
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
+TRANSCRIPTS_DIR = 'transcripts'
 
-# Initialize YouTube API client
 youtube = build(YOUTUBE_API_SERVICE_NAME,
                 YOUTUBE_API_VERSION, developerKey=API_KEY)
 
-# Initialize VADER sentiment analyzer
-analyzer = SentimentIntensityAnalyzer()
+classifier = pipeline('sentiment-analysis', model='ProsusAI/finbert')
 
 
 def get_video_details(video_id):
-    request = youtube.videos().list(
-        part="contentDetails",
-        id=video_id
-    )
+    request = youtube.videos().list(part="contentDetails", id=video_id)
     response = request.execute()
     if not response['items']:
         return None
     content_details = response['items'][0]['contentDetails']
     duration = isodate.parse_duration(
         content_details['duration']).total_seconds()
-    return {
-        'duration': duration
-    }
+    return {'duration': duration}
 
 
 def get_video_transcript(video_id):
@@ -56,16 +49,20 @@ def get_videos_for_keyword(keyword, published_after, published_before, max_resul
     response = request.execute()
 
     videos = []
+    first_keyword = keyword.split()[0].lower()
+
     for item in response['items']:
         video_id = item['id']['videoId']
+        title = item['snippet']['title'].lower()
+
+        if first_keyword not in title:
+            continue
         video_details = get_video_details(video_id)
 
-        # 1800 seconds = 30 minutes
         if not video_details or video_details['duration'] > 1800:
             continue
 
         transcript = get_video_transcript(video_id)
-
         if transcript is None:
             continue
 
@@ -75,33 +72,33 @@ def get_videos_for_keyword(keyword, published_after, published_before, max_resul
             'transcript': transcript
         })
 
+        if len(videos) == 3:
+            break
+
     return videos
 
 
 def analyze_sentiment(transcript):
-    sentiment_scores = {
-        'positive': 0,
-        'neutral': 0,
-        'negative': 0
-    }
+    sentiment_scores = {'positive': 0, 'neutral': 0, 'negative': 0}
     highest_negative_sentiment = -1
     top_negative_snippet = ""
 
-    for entry in transcript:
-        text = entry['text']
-        sentiment = analyzer.polarity_scores(text)
-        negative_score = sentiment['neg']
+    lines = [entry['text'] for entry in transcript]
+    for i in range(0, len(lines), 10):
+        segment = ' '.join(lines[i:i + 10])
+        result = classifier(segment)[0]
+        label = result['label']
+        score = result['score']
 
-        if sentiment['compound'] >= 0.05:
-            sentiment_scores['positive'] += 1
-        elif sentiment['compound'] <= -0.05:
-            sentiment_scores['negative'] += 1
+        if label == 'positive':
+            sentiment_scores['positive'] += 1.5
+        elif label == 'negative':
+            sentiment_scores['negative'] += 1.5
+            if score > highest_negative_sentiment:
+                highest_negative_sentiment = score
+                top_negative_snippet = segment
         else:
             sentiment_scores['neutral'] += 1
-
-        if negative_score > highest_negative_sentiment:
-            highest_negative_sentiment = negative_score
-            top_negative_snippet = text
 
     total = sum(sentiment_scores.values())
     if total > 0:
@@ -112,11 +109,7 @@ def analyze_sentiment(transcript):
 
 
 def calculate_average_sentiment(videos):
-    sentiment_totals = {
-        'positive': 0,
-        'neutral': 0,
-        'negative': 0
-    }
+    sentiment_totals = {'positive': 0, 'neutral': 0, 'negative': 0}
     count = len(videos)
     video_sentiments = []
 
@@ -138,9 +131,30 @@ def calculate_average_sentiment(videos):
     return sentiment_totals, video_sentiments
 
 
+def save_transcripts(videos, date):
+    if not os.path.exists(TRANSCRIPTS_DIR):
+        os.makedirs(TRANSCRIPTS_DIR)
+
+    for video in videos:
+        file_path = os.path.join(
+            TRANSCRIPTS_DIR, f"{date}_{video['video_id']}.txt")
+        with open(file_path, 'w') as file:
+            for entry in video['transcript']:
+                file.write(entry['text'] + '\n')
+
+
+def get_business_days(start_date, num_days):
+    business_days = []
+    while len(business_days) < num_days:
+        if start_date.weekday() < 5:
+            business_days.append(start_date)
+        start_date -= timedelta(days=1)
+    return business_days
+
+
 def display_average_sentiment_per_day(keyword):
     today = datetime.utcnow()
-    days = [today - timedelta(days=i) for i in range(10)]
+    days = [today - timedelta(days=i) for i in range(11)]
 
     for day in days:
         published_after = day.replace(
@@ -150,9 +164,10 @@ def display_average_sentiment_per_day(keyword):
 
         videos = get_videos_for_keyword(
             keyword, published_after, published_before, max_results=10)
-        top_videos = videos[:3]  # Get the top 3 videos
+        top_videos = videos[:3]
 
         if top_videos:
+            save_transcripts(top_videos, day)
             average_sentiment, video_sentiments = calculate_average_sentiment(
                 top_videos)
             print(f"Date: {day.strftime('%Y-%m-%d')}")
@@ -169,9 +184,70 @@ def display_average_sentiment_per_day(keyword):
             print("----------")
 
 
-# if __name__ == "__main__":
-    # keyword = "Apple stock"
-    # display_average_sentiment_per_day(keyword)
+def save_transcript(video_id, transcript):
+    if not os.path.exists(TRANSCRIPTS_DIR):
+        os.makedirs(TRANSCRIPTS_DIR)
+    file_path = os.path.join(TRANSCRIPTS_DIR, f"{video_id}.txt")
+    with open(file_path, 'w') as file:
+        for entry in transcript:
+            file.write(entry['text'] + '\n')
 
-    # analyzer = NewsSentimentAnalyzer('REDACTED_API')
-    # analyzer.display_average_sentiment_per_day(keyword)
+
+def get_top_video_for_keyword(keyword, max_results=1):
+    request = youtube.search().list(
+        q=keyword,
+        part='id,snippet',
+        type='video',
+        maxResults=max_results,
+        publishedAfter=datetime.utcnow().replace(
+            hour=0, minute=0, second=0).isoformat("T") + "Z",
+        order='viewCount'
+    )
+    response = request.execute()
+
+    if not response['items']:
+        return None
+
+    top_video = response['items'][0]
+    video_id = top_video['id']['videoId']
+    return {
+        'video_id': video_id,
+        'title': top_video['snippet']['title']
+    }
+
+
+def test_single_video_by_keyword(keyword):
+    video_info = get_top_video_for_keyword(keyword)
+    if not video_info:
+        print("No video found for the given keyword.")
+        return
+
+    video_id = video_info['video_id']
+    title = video_info['title']
+    print(f"Testing video: {title} (ID: {video_id})")
+
+    video_details = get_video_details(video_id)
+    if not video_details or video_details['duration'] > 1800:
+        print("Video is either too long or details could not be fetched.")
+        return
+
+    transcript = get_video_transcript(video_id)
+    if transcript is None:
+        print("Transcript not available.")
+        return
+
+    save_transcript(video_id, transcript)
+
+    sentiment, top_negative_snippet = analyze_sentiment(transcript)
+    print(f"Sentiment Scores: {sentiment}")
+    print(f"Top Negative Snippet: {top_negative_snippet}")
+
+
+if __name__ == "__main__":
+    keyword = "Bitcoin stock"
+    # display_average_sentiment_per_day(keyword)
+    # test_single_video_by_keyword(keyword)
+
+    news_analyzer = NewsSentimentAnalyzer('367a29799166461e9f1f99cf648d99c2')
+    news_analyzer.display_average_sentiment_per_day(keyword)
+    # news_analyzer.test_single_article_by_keyword(keyword)

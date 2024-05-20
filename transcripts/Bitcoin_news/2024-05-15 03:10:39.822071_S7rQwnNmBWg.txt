@@ -1,0 +1,483 @@
+there are three reasons why people adopt
+crypto for fun for speculation and out
+of necessity in many parts of the world
+crypto adoption is happening because of
+the third reason typically because Fiat
+currencies are losing value or because
+governments have imposed strict Capital
+controls a recent report by one of the
+world's largest financial institutions
+reveals how much crypto is being used
+out of necessity today we're going to
+summarize it and tell you what it means
+for the crypto
+Market the report that we'll be
+summarizing today is titled a primer on
+bitcoin cross border flows it was
+published by the international monetary
+fund or IMF an unaccountable and
+unelected organization that is Infamous
+for giving out US dollar loans to
+developing countries with lots of
+conditions attached this is significant
+because organizations like the IMF see
+cryptocurrencies as a threat to the US
+dollar based Fiat Financial system that
+they promote and they preserve the fact
+that the IMF is examining btc's use in
+crossb transactions suggests it's
+concerned about btc's use in this
+context we'll come back to that a little
+bit later by the way the full report
+will be in the description if you are
+interested now the report begins with a
+brief introduction to bitcoin not
+surprisingly the authors fail to make
+the distinction between Bitcoin the
+network and BTC the cryptocoin that
+pumps and dumps to be fair this is a
+distinction that most people fail to
+make even in crypto that's why we have
+been repeating it moving on the authors
+then note that the blockchain technology
+that is underlying the Bitcoin Network
+implies that BTC the cryptocurrency is
+frequently being sent around the globe
+the thing is is that it's difficult to
+figure out just how many BTC
+transactions are related specifically to
+crossborder flows the authors explained
+that this is due to both the
+pseudonymity of the Bitcoin blockchain
+and also the fact that many BTC
+transactions take place offchain on
+places such as exchanges for those
+unfamiliar pseudonymity means that the
+data is public and viewable but not
+connected to personal information news
+flash but BTC
+and most cryptocurrencies are not
+private or Anonymous merely pseudonymous
+anyways given these facts the IMF
+reports authors employed multiple
+onchain and offchain measures to try and
+assess just how many BTC transactions
+are going across borders they reveal
+something interesting yet intuitive and
+that's that crossborder BTC transactions
+behave differently from regular BTC
+transactions obviously this means that
+crossb transactions for BTC are easy to
+identify so how many of them are there
+the authors give a teaser and that's
+that the total value of BTC being sent
+across borders is larger than the GDP of
+many countries notably crossb BTC
+transactions appear to be larger on
+average what's fascinating here is that
+the authors also touch on some of the
+research that they have already done on
+this topic they cite a previous study
+about flows between BTC and the Chinese
+one and found that BTC CNY flows
+fluctuate based on what's going on with
+capital controls suggesting Capital
+flight they then site another more
+recent study which found that BTC is
+increasingly being used as a tool to
+send remittance and invade Capital
+controls in developing countries they
+reveal that this has resulted in more
+research into btc's use to evade Capital
+controls seemingly confirming that the
+IMF is focused on it as you might have
+guessed the authors note that while
+btc's crossb flows are still small
+relative to Fiat currencies btc's
+adoption and crypto's evolution are
+increasing fast and this means that lots
+of data is needed to and I quote
+targeted policy response in the future
+in other words the folks who control The
+Current financial system are starting to
+get nervous about people using BTC and
+crypto to circumvent current and future
+Capital controls make no mistake Capital
+controls will be implemented in
+developing countries too if the
+situation gets bad enough this
+underscores another thing that we have
+been repeating and that's that the
+Financial Freedom does not mean having
+lots of money it means being able to do
+whatever you want with your money
+whenever you want and in case you didn't
+get the memo this is only truly possible
+with decentralized cryptos like BTC and
+money Commodities like gold by the way
+if you're enjoying the video so far be
+sure to smash that like button and give
+the video a boost and be sure to
+subscribe to the channel and ping that
+notification Bell so you don't miss the
+next one now in the second part of the
+report the authors explain exactly how
+they track btc's crossborder
+transactions using onchain and offchain
+data they start by noting that previous
+research found that btc's onchain volume
+is slightly larger than offchain volume
+but don't specify by how much they then
+say that there are three types of crypto
+exchanges centralized exchanges
+peer-to-peer exchanges and decentralized
+exchanges this is a bit odd because it
+implies that peer-to-peer exchanges and
+decentralized exchanges are offchain
+which depending on the circumstances
+isn't always the case say speaking of
+exchanges did you know that the coin
+Bureau deals page has tradeing fee
+discounts of up to 60% and sign up
+bonuses of up to $60,000 on some of the
+best crypto exchanges these deals are
+only available to the viewers and won't
+be around for long so take advantage of
+them using the link down below now in
+any case the authors then go on to
+explain that they began analyzing btc's
+transaction data by identifying which
+Bitcoin wallets belong to to exchanges
+they did this using a mix of previous
+research and publicly available data
+Note that most blockchain explorers will
+know which wallet addresses belong to an
+exchange in the end they were able to
+determine that 5% of the Bitcoin wallet
+addresses that analyzed belonged to no
+less than 80 crypto exchanges which
+collectively sent and received more than
+1.6 million BTC transactions naturally
+The Next Step was then to assess which
+countries these exchanges are based in
+once again the authors use a mix of
+previous research and publicly available
+information to figure out where all 80
+crypto exchanges are based then they use
+data from chainalysis to assess where
+the Bitcoin wallets transacting with
+these exchanges are based FYI this is
+how they can track you more about that
+in the description now moving on finally
+the authors use data from the
+peer-to-peer BTC exchange local Bitcoins
+to see where Fiat currencies fit into
+the picture this data set contained
+information about 40 million BTC
+transactions involving 136 Fiat
+currencies between 2017 and 2023 and
+applied an algorithm to filter by
+country if you're a bit lost the authors
+provide this useful infographic showing
+you what aspects of onchain and offchain
+data they analyze
+you recall there are three onchain chain
+analysis and local Bitcoins together
+they provide the necessary data to get a
+sense of btc's crossborder transactions
+this ties into the third part of the
+report which analyzes btc's crossborder
+transactions the authors start by adding
+another important statistic to the mix
+and that's regular cross Capital flows
+which they measure using trafi data and
+which even they admit isn't the best
+hm regardless they found that the
+average onchain size of crossb BTC
+transactions is over 13 BTC compared to
+an average of roughly 0.02 BTC of
+offchain as you might have guessed the
+average size of both onchain and
+offchain BTC transactions has been
+falling over time as btc's price has
+been rising the authors also found that
+the largest cross border BTC flows
+occurred in parts of Latin America
+Eastern Europe Asia and Africa the heat
+map shows where crossb BTC transactions
+are happening the most it is eye
+openening as it reveals just how much of
+the world seems to be using BTC it gets
+even more eye openening when you
+consider the author's third finding
+which is the enormous size of these
+crossb flows in relation to the GDP of
+the countries involved the heat map for
+this can be seen here it paints a clear
+picture some BTC flows account for
+almost
+2.5% of a country's GDP to their credit
+the authors did some extra analysis to
+see whether macro and crypto factors
+played any role in these crossb BTC
+flows this relates to the fourth part of
+the report where the authors did an
+empirical analysis to assess just how
+similar BTC flows are to standard cross
+Capital flows they found that while
+cross Capital flows are impacted by
+macro factors like a strong US dollar
+crossb BTC flows effectively aren't they
+believe this is because most crossb BTC
+flows are likely related to remittances
+or Capital controls which don't really
+care much about what the FED are saying
+or doing conversely crypto factors like
+sentiment had an impact on crossb BTC
+flows and even had had a minor impact on
+some standard cross Capital flows this
+suggests that there must be a big
+overlap between trafi investors and BTC
+investors somewhere which makes sense
+but is still a surprising finding
+another crypto specific factor that
+seems to influence crossb BTC flows is
+the parallel premium which is basically
+the difference between BTC prices in
+exchanges the authors note that when the
+parallel premium Rises crossb BTC flows
+increase this again suggests Capital
+control
+evasion the authors say this is very
+likely because a change in btc's
+parallel premium is correlated to lower
+inflows for tradire
+assets they know that the underlying
+factor causing this link between BTC and
+Trad fight assets is exchange rate
+differentials and that is the sudden
+change in the price of Fiat currencies
+in the final part of the report they
+conclude that based on their admittedly
+limited data there are lots of
+crossboard BTC transactions and most of
+them are very large they highlight the
+fact that onchain transactions are the
+elephant in the room and that both types
+point to Capital control evasion they
+know that these findings are consistent
+with findings on a recent report and
+point to an IMF paper published back in
+2023 3 which effectively advise
+countries with strict Capital controls
+to crack down on crypto they admit that
+btc's crossb flows may not be entirely
+related to Capital controls instead they
+could be related to plain old exchange
+rate volatility for reference most Fiat
+currencies aren't that stable they're
+just stable relative to other Assets in
+relation to the US dollar even then
+there have been some major fat
+currencies like the Japanese Yen that
+has fallen by double digits in months
+the authors advise any Central Bankers
+or any government officials reading to
+minimize this exchange rate volatility
+presumably because it likewise results
+in more BTC and crypto adoption funly
+enough the authors don't advise that
+they improve their trafi Capital inflows
+but that seems to be another factor to
+clarify the authors found that try
+Capital inflows were in inversely
+correlated to crossb BTC flows the
+higher the trafy capital inflows a
+country had the fewer crossb BTC
+transactions there were this suggests
+that people without access to a good
+trfi Market are invested in crypto
+instead on that note the authors caution
+that the recent approval of the spot
+Bitcoin ETF could essentially
+supercharge btc's adoption and use in
+other contexts in the future presumably
+due to its price effects they warned
+that and I quote this user convergence
+could certainly complicate policy
+responses translation the spot Bitcoin
+ETFs will increase BTC adoption more
+generally and the IMF doesn't like it if
+that wasn't spooky enough the authors
+seem to suggest that every BTC
+transaction ought to have kyc attached
+to it someday so that adequate policy
+can be implemented to mitigate its
+adoption before I tell you about what
+this all means for the crypto Market I
+want to go back to that 2023 IMF paper
+that was cited by the authors about
+proposed policies related to crypto and
+capital controls that's because it
+reveals there's an agenda behind the
+report we just summarized the agenda we
+mentioned earlier to refresh your memory
+the purpose of the IMF is to promote and
+preserve the dollar-based Global
+Financial system that we have today it
+sees BDC and crypto as a threat to this
+financial system so much so that it's
+even come up with a term meant to show
+the ills of crypto adoption
+cryptoz the citing of the IMF 2023 paper
+is a dead giveaway that there is an
+agenda because the policy
+recommendations were published before
+most of the reports cited the authors
+about btc's use in evading Capital
+controls they started with the
+conclusion and then produced the data
+just to justify it this is where things
+get scary because the IMF paper cited by
+the authors of this report doesn't even
+contain a policy recommendation about
+btc's use in evading Capital controls
+the only mention of capital controls
+falls under a warning that mass crypto
+adoption will make monetary policy less
+effective this is scary because it
+implies that Capital controls will be
+used to ensure that monetary policy
+remains effective if you watch our video
+about the man who predicted everything
+you'll know that he thinks this is
+exactly what's going to happen countries
+will impose Capital controls to manage
+their debts you might also recall that
+he believes that governments around the
+world will crack down on BTC precisely
+because it can be used to evade these
+Capital controls the caveat is that the
+IMF doesn't seem to be concerned about
+BTC at least not yet from the IMF
+perspective stable coins are a bigger
+threat per the 2023 paper and I quote
+the transmission of monetary policy
+would weaken if firms and households
+prefer to save and invest in crypto
+assets that are not Peg to the domestic
+fiat currency the risk of currency
+substitution is particularly pertinent
+for countries with unstable currencies
+and weak monetary framework cryptoz is
+more likely to be associated with the
+adoptions of stable coins denominated in
+foreign
+currencies in case you haven't noticed
+this is why we've seen stable coin
+regulations pop up around the world
+every country that isn't already
+dollarized is terrified of its domestic
+currency being replaced by a de facto
+digital dollar at the same time they
+need to find some way to subsidize their
+growing debts that's why not paid to the
+domestic fiat currency is the most
+important part of that quote it doesn't
+mean that stable coins will be banned
+entirely rather it means that it will
+only be possible to issue a new stable
+coins that are pegged to a country's
+domestic currency these would all be de
+facto
+cbdcs this brings me to the big question
+and that's what all of this means for
+the crypto Market namely BTC in short
+it's both bullish and bearish for
+contexts the IMF has never considered
+BTC to be a currency it has explicitly
+avoided using the term currency to drive
+home the fact that it is not a currency
+however the report we summarized today
+along with the other recent reports it
+sites suggests that the IMF is starting
+to wake up to the fact that BTC is being
+treated as a currency by millions of
+people around the world although this
+doesn't mean that BTC is a currency it's
+a big step in that direction this means
+that the IMF has has no other choice but
+to start treating BTC as a currency in
+its policy recommendations or at the
+very least as an asset that has economic
+significance internationally remember
+that crossb BTC transactions account for
+as much as
+2.5% of some Count's gdps never mind the
+possibility that some of these crossb
+transactions are actually crossborder
+trades this is bullish because it's
+proof that Bitcoin adoption is growing
+not just BTC speculation but it's also
+bearish because this growth is starting
+to catch the attention of the likes of
+the IMF just like stable coins did when
+they became front and center during the
+last crypto Market cycle due to their
+rapid growth of course the Catalyst for
+attention in btc's case is the approval
+of the spot Bitcoin ETFs in the US and
+what's likely to be the approval of the
+spot Bitcoin ETFs in every major
+economic area around the world these
+ETFs will not only increase btc's price
+but also lower its volatility making it
+more currency like if we can see this
+coming you can bet that the IMF does too
+that's probably why it's being proactive
+by letting central banks and governments
+around the world know that BTC could
+soon become a tool to evade their
+inevitable Capital controls and unlike
+stable coins they can't freeze BTC
+transactions in case you miss the memo
+stable coins like uscc can and have been
+frozen by their issuers anyhow this all
+pertains to the other crypto regulations
+being pushed by other unaccountable and
+unelected international organizations
+such as the financial action task force
+to bring you up to speed these so-called
+recommendations involve making it more
+difficult to do things on Chain by
+labeling such activities as high risk we
+are already seeing these regulations
+come into play with restrictions around
+crypto wallets and added data collection
+when withdrawing from depositing to an
+exchange these restrictions will only
+get worse the Silver Lining is that they
+will simultaneously allow for more
+Capital to flow into crypto with that in
+mind you start to wonder if the spot
+Bitcoin ETFs are ultimately a troan
+horse to make BTC another Triad fight
+asset that can only be transacted
+offchain then again the spot Bitcoin
+ETFs could just as easily be a troan
+horse to make BDC another Global Reserve
+currency that competes with the US
+dollar I guess we're about to find out
+either
+way and that's all for today's video If
+you learned something new be sure to
+smash that like button and let us know
+if you want to keep learning subscribe
+to the channel and ping that
+notification Bell if you want to help
+others learn about how BGC is being used
+besides speculation share this video
+with them as always thank you so much
+for watching and I'll see you all in the
+next one this is Jessica signing off
+[Music]

@@ -1,0 +1,129 @@
+less than 5 years ago Intel powered
+every single Mac today they're gone
+apple is having a Mac Renaissance and
+Intel is the worst performing stock in
+the S&P 500 in the last 3 months alone
+Intel stock price has dropped by over
+30% and in the list of semiconductor
+companies which they used to top they're
+now behind Nvidia tsmc broadcom asml
+Samsung AMD and Qualcomm now obviously
+it would be easy to say that this is
+because of Apple silicon and in tells
+lot of sales that used to go into Macs I
+mean obviously that's a part of it but
+it's a pretty small one Mac is only
+around about 9 half% of the personal
+computer market in terms of market share
+so yes it would hurt but it's not
+enormous the bigger issue here is the
+performance of Apple silicon especially
+at its efficiency it's turned a lot of
+heads away from x86 in general from AMD
+and Intel's chips to other architectures
+like arm which Apple designs their CES
+around risk 5 and others and that hurts
+Intel disproportionately compared to AMD
+for example for a couple of reasons
+first Intel is very dependent on CPUs
+with their one and only generation of
+arc graphics cards having been released
+so far with let's say underwhelming
+reception while AMD does CPUs and a
+whole bunch of gpus too spreading the
+risk but also x86 is Intel's and Intel
+licensed the instruction set to AMD
+we're already seeing qual bringing the
+Snapdragon X Elite and the bin plus
+version admittedly created by the team
+at nuvia that Qualcomm acquired after it
+was set up by drum roll please X Apple
+silicon Engineers now that's the one
+that they've been teasing the
+performance of since the start of the
+Year even though you can't buy it yet
+and while leaked benchmarks put it ahead
+of M3 in multicore if behind it in
+single core the M4 that Apple announced
+last week beats it and remember the X
+Elite is the top of the line for
+Qualcomm M4 is Apple's base chip but it
+does show that other companies are
+enthusiastic about arm and risk chips as
+Microsoft Surface will have Snapdragon
+as an option again just as you have the
+option to subscribe I'm just saying it's
+an option that one change means that
+Microsoft is taking arm seriously too
+and windows is pushing hard with a
+similar translation layer to Apple's
+Rosetta 2 so the x86 code should run
+pretty seamlessly on arm if likely with
+a performance penalty but it's not not
+just the desktop less people are
+actually buying laptops and desktops now
+and there are very very few true tablets
+and I'm pretty sure no phones that run
+x86 silicon and that's all that a lot of
+people are buying these days with more
+and more compute moving to the cloud and
+to web apps server based AI processing
+and even cloud gaming with Xbox Cloud
+Nvidia GeForce now and more meaning your
+internet speed is a lot more important
+in a lot of ways than the hardware
+you're running but doesn't Intel still
+have the speed advantage maybe not for
+long right now the fastest chip on the
+market from Intel is the core I9 14900 K
+such a Snappy title with single core
+scores around 3,300 and multicore of
+24,000 now it's a 24 core chip just like
+the M2 Ultra and yes right now it is
+ahead of the M2 Ultra which is trailing
+on 2800 and
+21,500 so that Intel chip though is
+using about 320 wats at its peak which
+is exactly what it's going to be doing
+during these benchmarks whereas the M2
+Ultra uses just 90 watts and that M2
+Ultra also includes its onboard Graphics
+not just the CPU the graphics are no
+slouch either with tech radar comparing
+the performance to an Nvidia 4070
+notebook Edition in terms of raw
+performance but before you get down in
+my comment section which is fine I know
+that you will not get comparable game
+performance because you know it's a back
+and game optimization still has a lot of
+work to do but that 4070 notebook chip
+will draw another 115 Watts on top of
+the CPU so yeah efficiency is definitely
+an advantage here in case that wasn't
+enough the
+14900 K had the fastest single core
+performance in geekbench that is until
+Apple's M4 chip uh benchmarks leaked
+last week the M4 destroys it 3700 points
+in single core 4 100 more than the Intel
+in the thinnest ever fanless iPad Pro
+now you know as well as I do that that
+I9 sounded like a Boeing taking off orbe
+it briefly before probably crashing back
+into the runway because it's a Boeing of
+course the M4 doesn't come close in
+multicore but its Big Brothers Max and
+Ultra probably will not to mention the
+rumored M4 extreme chips that may
+finally make the Mac Pro just make a
+little little bit of sense so is Intel
+dead no not yet but they are circling
+the drain and they're being nudged
+closer from a bunch of different
+directions is it just a matter of time
+let me know down in the comments thank
+you to my patreons and I will see you in
+the next one want the latest Apple news
+leaks and rumors subscribe and ring the
+bell

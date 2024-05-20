@@ -1,0 +1,206 @@
+open AI wrapping up a live stream
+conference earlier with Chief technology
+officer Mira moradi unveiling a flagship
+chatbot model called chat
+gp40 let's take a
+look okay so chat GPT this is what I
+ended up with how does this look it
+looks perfect you've solved it and x
+equals 1 nicely done how do you feel
+about solving linear equations now yeah
+honestly i' I'm not pretty confident I
+can solve a linear
+equations joining us now is Patrick
+Morehead founder CEO and chief analyst
+at more insights and strategy Patrick
+it's great to have you on set Josh it's
+great to be here usually I'm from you
+know in front of a uh uh computer screen
+but here we in the big Studio you in New
+York and we had to make it happen so
+let's get right to the news Patrick so
+open AI announces this new flagship
+model they say smarter faster first just
+give us your response to the news what
+you heard today Patrick and how you
+think it impact
+kind of the broader kind of competitive
+environment we find ourselves in yeah so
+first off timing is everything so
+tomorrow's Google's big Google IO
+conference they're the king of search
+they're the kings of advertising and
+this was clearly time to give Google
+Google advertisers uh something to think
+about obviously we have apple WWDC in a
+few weeks and yes it impacts them
+because they want to get out and Define
+what the quote unquote best intelligent
+agent or assistant experienced is and
+this brought together brings together
+voice it brings together uh images and
+videos and text in a very interesting
+and and humanlike interaction mode yep
+so what I continue to struggle with and
+I don't know if this changes the
+Paradigm okay so chat GPT comes out
+early you know late 22 early last year
+explodes in interest all of these Grand
+predictions about how it's going to
+change the world you and I are still
+sitting here in person my life hasn't
+changed at all as a result of this I
+know some people who use it as a tool
+fine in Corporate America they're
+integrating it to some degree but it's
+still kind of unclear like where where's
+the big deal where like where's the
+thing that's going to be this revolution
+that seems to have been promised yeah so
+technology is always slower to be
+adopted than we all think it's going to
+in Silicon Valley right it it it comes
+overnight but the reality is to hit
+typical consumers and even businesses uh
+come years after use but you have to
+show off the latest and gr is to get
+people excited it's kind of like the
+beginning of an investment bubble right
+let's get everybody excited let's show
+the capability we're going to hit the
+trough of disillusionment uh at some
+point but it's to get people uh uh tied
+in now when it comes to software and
+services we can use on our smartphones
+like jat chat GPT
+40 uh it is a much faster F time to use
+than let's say building a new product
+like the rabbit that you you know stick
+on on your lapel that unfortunately
+bombed early but um I I think it's a
+good Testament to what we should expect
+to see from a Google an apple and even a
+Microsoft do you do you think Patrick
+though for big Tech investors who are
+listening right now how concerned should
+they be that users start using open a
+chat gbt more and more and rely less and
+less on big Tech voice assistant so it
+is a risk I don't think it's a midterm
+risk uh but if Apple and Google don't
+get in there and plug the hole or
+potentially for Apple's case align with
+open a it could spell trouble because if
+you look at the biggest applications
+that that just took took the World by
+storm like Facebook it was initially
+free Google search was free with no ads
+right so you weren't paying for it and
+this has the same type of risk if you
+get eyeballs and experiences coming in
+you could op uh open AI could monetize
+that multiple ways through a service
+payment through advertising through
+essentially sending you to another
+chatbot for a company that does make
+money a food services company on
+airlines that's how it could be
+monetized and that is a potential risk
+to both Google and apple and speaking
+about Apple there was also a report that
+apple is indeed going to be partnering
+with open AI
+for some version maybe of it's chap b or
+on the upcoming phone cycle do you think
+that that is going to happen do you
+believe that that is going to happen and
+then what are the implications not just
+for Apple but for Google in that case
+yeah so I put the odds at about 5050
+that we'll we'll see the two come
+together there could have been some of
+the leaks that saw the Mac OS desktop
+app that was announced today and they
+took that to the next level but Apple
+does need help in in certain areas and
+there's two types of AI there's on
+device which would be on the iPhone and
+the iPad and the mac and then there' be
+the cloud-based service I believe if
+there's going to be any deal it would be
+cloud-based Services maybe a type of
+deal where Google pays Apple today 20
+to30 billion dollar to get uh Google
+search as the default search on the
+iPhone maybe this is a deal like this or
+maybe a it's less of a payment but more
+of a quidd pro quo Apple has to have um
+very good on device AI or or or
+literally uh it's going to spell trouble
+for Apple because that's what it does
+it's all about on device it's not about
+the cloud Apple's biggest level of
+sophistication on the cloud is backups
+and streaming media and video which in
+in aggregate aren't that uh complex and
+if you recall back things like mobile me
+were just complete disasters I do
+believe that we will see a Siri relaunch
+at WWDC see uh and it will incorporate
+generative AI potentially some help from
+open Ai and again it's not just one
+model you're looking at probably 40
+models that have to be addressed in
+between what's on the device and at the
+cloud to do different types of things
+and you hit on a point which I want to
+touch on Patrick because let's say apple
+and open AI get this deal done Tim Cook
+and Sam Alman they work it out the
+lawyers they sign the paperwork your
+point is you think it's possible that
+Sam Alman pays Cook's company because
+Alman thinks you know what yes I'll pay
+to get in front of these billion plus
+iPhones yeah this could be the long-term
+play for them right let's get people
+hooked on open Ai and chat GPT and that
+would pay dividends for years in a very
+similar way I mean open AI is losing a
+tremendous amount of money today a lot
+of money and uh they can either invest
+it into infrastructure advertising
+product or a potential deal to get on
+the most pervasive uh brand out there
+which is Apple I out of here on this
+Patrick a different headline reports
+that arm is going to develop AI chips
+the key word being chips there no one
+knows arm better than you um what do you
+how much credibility you give that
+report or you think it's bogus so
+creating actual products meaning you buy
+a chip from them I put very very low
+probability what I do put a high
+probability against is them getting into
+them licensing the intellectual property
+like they do uh to Apple like they do to
+Qualcomm like they do to AWS and Azure
+which enable other people to use their
+intellectual property to build AI
+accelerators for for phones for tablets
+for PCs and even in the data center I do
+think that will happen and quite frankly
+I think that's priced in might be priced
+into the stock already when you look at
+the multiples that that that it's
+trading at right now investors want to
+see more tangible AI goodness even
+they're the processor behind it and a
+lot of AI is done on a CPU they want to
+see specific AI IP Patrick we didn't
+plan it this way but you were the
+perfect guy to have today on set we
+maybe we did plan it I don't know thank
+you for coming my friend thanks for
+thanks Josh

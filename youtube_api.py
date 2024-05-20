@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime, timedelta
 
+
 class YouTubeAPI:
     def __init__(self, api_key):
         self.api_key = api_key
@@ -16,7 +17,7 @@ class YouTubeAPI:
             'type': 'video',
             'publishedAfter': start_date,
             'publishedBefore': end_date,
-            'order': 'viewCount',
+            'order': 'relevance',
             'key': self.api_key
         }
         response = requests.get(url, params=params)
@@ -29,7 +30,7 @@ class YouTubeAPI:
         business_days = []
         current_day = datetime.utcnow()
         while len(business_days) < num_days:
-            if current_day.weekday() < 5:  # Monday to Friday are considered business days
+            if current_day.weekday() < 5:
                 business_days.append(current_day)
             current_day -= timedelta(days=1)
         return business_days
@@ -39,9 +40,12 @@ class YouTubeAPI:
         all_videos = []
 
         for day in business_days:
-            start_date = day.replace(hour=0, minute=0, second=0, microsecond=0).isoformat("T") + "Z"
-            end_date = (day + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).isoformat("T") + "Z"
-            videos = self.get_top_videos(query, start_date, end_date, max_results=videos_per_day)
+            start_date = day.replace(
+                hour=0, minute=0, second=0, microsecond=0).isoformat("T") + "Z"
+            end_date = (day + timedelta(days=1)).replace(hour=0,
+                                                         minute=0, second=0, microsecond=0).isoformat("T") + "Z"
+            videos = self.get_top_videos(
+                query, start_date, end_date, max_results=videos_per_day)
             all_videos.append({
                 'date': day.date(),
                 'videos': videos

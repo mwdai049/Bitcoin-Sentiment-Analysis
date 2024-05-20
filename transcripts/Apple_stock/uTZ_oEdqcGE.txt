@@ -1,0 +1,641 @@
+there's little doubt at this point that
+there will be a wave of Partnerships
+coming to both Tesla and the other
+players in the EV industry and the
+self-driving cars industry today we're
+going to discuss two very big potential
+deals that might be starting to happen
+for the first story what will happen to
+Uber we'll watch a video of uber CEO Dar
+K Rahi being interviewed and he talks
+about Elon Musk and what will a robotaxi
+future look like for Uber second there
+reports from supply chain sources that
+apple and rivan might be in talks about
+a partnership does this make sense let's
+learn more and I've got my good friend
+Brian White from his incredible YouTube
+channel called futur oza joining me
+thank you Brian there's a lot going on
+with uh apple and rivan and I think uh
+some of the analysts out there who've
+been trying to cover it have just been
+scratching the surface so it's exciting
+to have an opportunity to go a little
+bit deeper yeah this is just I think I
+use the word tsunami because I'm
+expecting like many of these you know
+we're now getting to the end stage
+you're going to see Partnerships with
+licensing partnership with Tesla that's
+going to happen Chinese car companies
+other autocar companies other
+Partnerships like this and then you'll
+see Partnerships with the other partners
+they need to consolidate or you know
+this is existential for them let's watch
+Uber first this is something that we've
+all been waiting for is trying to
+understand what's going to happen with
+Uber and so this is uh you know Uber CEO
+he was interviewed on CNB BC I would
+never underestimate Elon Musk and Tesla
+they're clearly the leaders in EVS so he
+knows that I wonder if you think that
+he's already in talks has been in talks
+do you think it's going to happen let's
+watch this video first been any shift in
+your mind about Robo taxis you know
+there was a period of time we used to
+talk about Robo taxis probably every
+time you every quarter the state of Robo
+taxis where are they and then we and and
+then we effectively stopped you stop
+that investment as well now we're
+starting to hear you know and Elon Musk
+has sort of been in the background on
+this is but now he's very vocal about
+turning Tesla into a robo taxi company
+and we're starting to see more uh
+technology that that seems to actually
+be working do you have a different sort
+of view about this now well we think
+that the autonomous technology brings
+incredible promise incredible promise in
+terms of uh improving safety lowering
+prices making Mobility uh available for
+everybody uh which we think can increase
+the overall Market share uh of our
+services and and listen we would I would
+never
+underestimate uh Elon Musk and Tesla
+were big fans of his uh they're clearly
+the leaders in EVs and we have a lot of
+Teslas uh in our Marketplace at the same
+time I wouldn't underestimate what we
+bring to the table in terms of the Uber
+brand you know we're verb in terms of
+our matching pricing routing technology
+uh our payments fraud identity safety
+Technologies as well and so as a result
+we think we're in a great position to
+work with any and all AV manufacturers
+as the technology develops safely
+including Tesla by the way because what
+we're seeing what we can bring with this
+network is higher
+utilization of Av assets uh and we think
+do you see a c change I mean there are
+people in the tech world who think that
+the new Tesla FSD which is the full
+self-driving uh which is now running off
+of AI it's really the major shift in
+this that there was a step change in
+what it's capable of doing and that we
+now might be actually dramatically
+closer than we were a year or two or
+three ago I think the early promise that
+we see with newer AI models and
+imitation learnings what we call
+internally a2.0 is very exciting now
+remember AV had very strong early
+promise as well so early promise
+hopefully will result in uh faster
+development uh and we'll see how that
+develops and again because of the demand
+that we bring we can drive enormous
+demand to this promising technology if
+it develops we think it'll be a huge
+positive it also allows a lot of smaller
+players to develop this technology just
+like you saw kind of in the early days
+llms there are all a bunch of big
+players Etc you saw kind of Open Source
+smaller models come in we think the same
+could be true of the of the imitation
+learning models that we're seeing at the
+market so it's pretty promising we'll
+see how it turns out we're going to be a
+player in the space
+you know great to hear his opinion right
+we finally it's for me anyways I haven't
+seen what he was thinking about this
+whole thing Elon Musk has clearly said
+that we will need Tesla will need uh
+Shepherds you know these these uh Fleet
+managers that will take care of the
+cleaning and management uh but do you
+think that they'll need to partner with
+Uber do you think they've already had
+these conversations do you think that
+they actually need the data that they
+talked about uh somebody I was talking
+to before who actually uh just last
+night who's actually an Uber driver but
+very you know very connected very smart
+he was saying that uh Tessa does not
+have that last mile you know that last
+little bit of 100 meters where you know
+let's say uh drop me off my house it
+doesn't know where to actually stop
+which is the front of my house somehow
+apparently Uber has that data like
+things like that what's your thinking
+last night I allowed the car to drive me
+home and it was uh a quiet there was no
+no one around so uh we're sit you know
+me and my family are in the car and it
+got near my house and it decided you
+know what I'm going to take the alley
+instead and I thought that was very
+strange and it gets the alley and it
+hesitates because it's very dark and
+narrow and it goes ahead and it drives
+into the alley and it drives past my
+house and it Loops the block and does it
+again so that was hilarious I think
+that's something that can easily be
+fixed with just a thing on the screen
+just a popup that says uh please say
+where you want me to drop you off that
+could be done uh in terms of your own
+home you could just drop a pen on the
+map that says this is my driveway I'm
+not worried about the Last Mile in terms
+of does Tesla need Uber no does Uber
+need Tesla well if they're the first to
+Market with this then yes they
+absolutely do because you know if you
+can't beat them join them and Uber can't
+beat them as you recall Uber spent
+billions trying to launch their own
+self-driving technology and hit local
+maximums like everyone has Uber Lyft
+everybody thought this would be solved
+by 2020 everybody was wrong everybody
+underestimated just how long the the
+long taale of exceptions can be and it's
+something where if you tried to code in
+every exception there will always be
+more exceptions so the neural net was
+what was needed does Uber have a data
+moat a brand Moe in many ways Uber has
+negative brand value uh I I don't look
+at Uber and say this is the best you
+know if I had a choice between taxis and
+Uber I'd pick Uber every time but if I
+had a choice between Uber and something
+that isn't Uber that is that manages to
+overcome the shortcomings of uber I
+would jump in a second especially if
+it's cheaper especially if there's no
+tips especially if if it's not if it
+doesn't have a reputation for taking
+advantage of restaurant owners and
+drivers and customers and I know he said
+that they spend a lot of effort
+protecting their customers but I would I
+would disagree with that I would not
+necessarily find that to be as
+universally true as he's suggesting so
+is it
+critical
+uh it's more critical for Uber than it
+is for Tesla you know there's a lot of
+pieces uh to Uber and to to ride healing
+and so there might be a partnership but
+when you think about how you know that
+Tesla is thinking about this um they are
+thinking about it not just based on
+their own cars they're looking at uh the
+customer own cars so maybe like I guess
+now I'm wondering if that's actually a a
+thing that Uber fits their model right
+which is um you know the drivers own the
+cars uh or is it something that you know
+it's it's not going to be the same thing
+or Ela Tesla is going to be the one to
+manage you know putting you into the
+network guess you can do both um but you
+know I I'm yeah I'm hearing more and
+more people saying that uh Uber
+partnership is something that they
+expect to happen um I I still am not
+convinced I think it's possible I think
+it's even likely I think it would be
+non-exclusive so that Uber doesn't have
+the capacity to say you can't also sell
+to Lyft you can't also sell to Herbert
+and Brian uh you you you have this
+opportunity it when you're talking about
+someone like uber if they need to put in
+a maintenance center to clean cars and
+safety check do whatever it is you have
+to do in between maybe not passengers
+but in between shifts uh Uber could set
+that up very quickly I have no doubt
+that they could uh put in inspection
+centers cleaning centers in in the right
+places in important places and get them
+staffed quickly so I think that would
+allow Tesla the head space to expand
+more quickly but also the revenue
+because I'm sure as much as Tesla would
+like to keep every single one of these
+cars for themselves the 2030 billion
+doll cash on hand is not adequate to do
+that from day one uh without incurring
+some pretty serious risk that doesn't
+necessarily need to be there yeah the
+argument was that uh you heard Uber CEO
+Dara say that actually uh they've they
+buy a lot of test they have a lot a big
+partnership now with Tesla where they
+encourage their drivers to get you know
+they they incent them give them
+incentives to buy Teslas and know you're
+watching a lot of these ride hill um
+drivers buy Teslas because at the end of
+the day the the monthly fee is about the
+same as it would be just the gas cost as
+well as long alone and so anyways like
+you know this this partnership has
+already happening with Uber and um you
+know the idea is that uh they can expand
+it it's already there and that this guy
+was saying that Uber drivers actually
+one of the best sellers like one of the
+best people to sell and so if you've got
+an Uber driver driving a Tesla they will
+sell you more Teslas This Is Where It
+gets weird because what happens when you
+don't have the driver anymore why does
+that how's Uber still going to upsell
+Tesla at that point right they're
+just kind of they should be a service
+behind the scenes uh and then Tesla
+launched their own app and so it's okay
+to have multiple apps right I think I
+heard some one expert say that if you
+look at McDonald's they have their own
+app but they allow Uber Eats and GrubHub
+and all these others to order McDonald's
+too because there's going to be regular
+service and then there'll be Peaks uh
+during high demand and so there you'll
+need other kind of you know other ways
+to uh buy that when it's needed what's
+you're thinking about um any signals
+that uh Tesla with the app and others
+that they might actually be partnering
+or they may not be partnering Uber's app
+works great and it always has I don't
+know what their development team is
+developing because the app I I you can't
+see the changes in it I I'm confident
+that when Tesla should Tesla launch
+their own app it would quickly become as
+competent as anything out there uh the
+real trick has less to do with that and
+more to do with uh achieving a level of
+saturation that allows customers to
+actually use the network I don't I'm not
+worried about that side of it kind of at
+all and I think you're right one car can
+exist on more than one network for that
+matter there are Uber and lift drivers
+where the driver has both and he'll have
+both apps open and see which one he
+wants to use for the next particular
+ride um I don't know that that driver
+would necessarily want a third app but
+hey I mean that's up to them and maybe
+three is too many ride hail networks to
+have uh there have been others in
+addition to and lift that haven't fared
+as well so all of that is definitely
+possible perfect okay let's talk about
+the next potential partnership that's
+out there and this is um rumors that
+apple and rivan are talking right now
+for a partnership and the only reason I
+bring this up is I've been given um you
+know information that this is likely
+true um this is from people that should
+be in the know that have relationships
+so that's the only reason I I'm thinking
+this might actually be real we'll see
+what happens um so this says here that
+there's a potential that apple is in
+talks with rivan about a potential
+partnership um and this is coming from
+supply chain sources this is Taiwan
+based Digi times that's who reported it
+and they said it comes from supply chain
+sources it's unclear what any such
+Alliance would entail Apple canceled its
+project Titan Apple car in late February
+it's unclear if there are actual talks
+even if true talks need an amount to
+anything so let's uh let's go ahead and
+watch this video of uh CNBC talking
+about it I'll warn the audience right
+now that there's a lot of uh what these
+guys are saying that aren't true we'll
+Point them out um and you guys can
+decide if you think what they're saying
+is real or not real true or not true Alo
+the car Alex stay right there because we
+have another report surrounding a
+partnership this time between Apple and
+rivan and filbo is here on set with us
+to maybe talk about some of those
+details well this came out of Digi times
+out of Asia said there was talk about a
+potential partnership even immediately
+Steve kovak with apple and me with rivan
+we started running this up the tree
+didn't get any take at all no take at
+all so I I don't put any Credence
+Credence to this but it does raise the
+question is Apple completely done when
+it comes to the auto companies remember
+they have essentially shut down project
+Titan so they're not going to plan on
+building a car Adam Jonas with Morgan
+Stanley brings up a great point in a
+note that he put out today and he
+essentially says this he says although
+Apple has confirmed it has nixed its
+Apple car project project Titan it does
+not mean there may not be any number of
+areas where Apple's broader AI efforts
+could Encompass the automotive value
+chain is it possible that somebody at
+rivan in Asia is having a conversation
+with somebody at Apple you bet I would
+hope they're doing that that's what auto
+companies are doing with tech companies
+every single day so this report by
+itself no reason for the stocks to move
+higher though you can bet that when
+rivan reports its results after the bell
+and during the call RJ gringe is going
+to get this question I was going to say
+for rivian's case as well weren't they
+the one who had the Ford investment that
+kind of went sour correct so I can't
+imagine they're overeager to go partner
+with another major company and guess who
+owns a big chunk of rivan Amazon oh
+right it's not like these guys are you
+know out in the wilderness of Illinois
+and they're not interacting with tech
+companies they are so it's just that
+this report started moving the stocks
+before the market today you'll notice
+the stocks really haven't done much
+since then because it hasn't been
+flushed out there's there's no there
+there if you will so the idea of the two
+working together quote on a car no no no
+no uptake there but the possibility uh
+that rivan might employ or work with
+apple on making Apple software a
+technology Hub there's Apple carplay out
+there there's car absolutely absolutely
+or other products in the future look AI
+opens up a number of opportunities not
+just for rivan but other automakers as
+well and you can bet that Apple while it
+is not doing project Titan it is
+certainly still in communication with
+auto companies I'm curious how about
+rivine as well as we've talked a lot
+about Tesla struggles lately where
+there's just it seems not enough demand
+to meet the supply of EVS that we
+thought there would be this this time
+and point but rivan has also still
+survived the challenge of higher
+interest rates and this initial period
+of plethora of startups where how does
+it stand now competitively speaking it's
+number two in the US in terms of pure EV
+companies the question becomes
+will they have to raise Capital between
+now and when the next product the R2
+comes out which they're going to build
+in Illinois and that's not coming out
+until well into 26 probably start
+production late 25 early 26 then you you
+know then you start looking at okay do
+you have the capital needed they've
+already said they're not going to build
+the plant in Georgia for now eventually
+they plan to that's where the R2 was
+going to be built so it's about cash
+preservation and getting through this
+period where demand is just not as
+strong as many people initially thought
+it would be Alex what do you think of
+the possibility of Apple working in the
+car business in some way if not to
+manufacture an automobile yeah I think
+that their project Titan right the
+self-driving program that they had if it
+was worth anything it would have been
+sold already I think it was worth so
+little that they just decided to shut it
+down and cut ties with it now I could
+see rivan seeing the improvements that
+Tesla's made in its full self-driving
+and getting on the phone with apple and
+being like hey Apple that self-driving
+thing is that working anymore and apple
+being like like well let's have a
+conversation about it and that to me is
+as far as it's probably got now I do
+think that apple and rivan could combine
+into like pretty impressive Partnership
+if Apple's carplay is more deeply
+integrated into rivan cars and by the
+way you know there's been all this
+rumors about maybe apple one day could
+have you know had a conversation with
+Elon Musk about uh acquiring Tesla and
+it never did is rivan a target for Apple
+in the future with all that cash it has
+and its need for growth I think that's
+something to keep thinking about okay so
+there's uh quite a number of things
+there
+some of the things they said sounds
+right and some of the things they said
+is kind of um sketchy let's watch listen
+to this Jeff Lutz reped to that video
+and he said the commentary here is
+laughable and ignorant at a minimum
+Tesla has demand issues and rivan
+doesn't Riven calling Apple for FSD Tech
+Riven is number two in the us but he
+didn't mention that they're losing
+40,000 $39,000 per vehicle sold uh so
+what's your thoughts on what you saw
+there Brian there was plent PL of little
+things to criticize but what you can't
+criticize is just how loud Phil actually
+can get uh there is Apple still in the
+auto he is is there is Apple still in
+the in the
+automotive game absolutely carplay is a
+real thing um and they will want to get
+that into more Vehicles they want to
+make that better they want to make it
+easier they want to make it more
+profitable and there's going to be new
+technologies that we don't know about
+yet that are definitely under
+development
+uh saying that Titan has no value
+whatsoever and that's why they didn't
+sell it
+misunderstands everything it's likely
+that it has tremendous value but that
+the cost to get it to completion is just
+not worth it with what we know today and
+they don't want to give out any Secret
+Sauce there's a lot of inner workings of
+Apple in that project that I assume they
+do not wish to share and the parts that
+are the the best about it would require
+Apple to also give up people the people
+who know how it actually works and that
+doesn't make any sense they wouldn't do
+that so what could a rivan partnership
+look like well rivan is going to they
+don't have the money or the talent to
+build their own FSD system but they've
+got the cameras they've got the sensors
+they've got the internet connection if
+only there was someone who would be
+interested purchas dat to develop ansd
+system someone who' already been on an
+FSD system to me that is The Logical
+partnership is just give us the data and
+when it works we'll give you the
+FSD I love it yeah that makes sense so
+let's let's let's break this down a
+little bit right I mean it doesn't
+matter if apple and rivan partner they
+don't have FSD they don't have an
+autonomy play regardless apple does not
+have this there's nothing that they've
+done to show that they have any of this
+they've got their cars they had the
+Liars but it's just so small numbers
+that it's unlikely that they're G to
+come out and surprise everybody that
+they've got this technology and that's
+why they shut down project Titan and U
+it could be though that they could buy
+rivan I think rivian's only1
+billion Apple you know spent 10 billion
+on this already maybe they'll go I'll
+just buy rivan now they don't usually
+buy companies they don't like to do this
+again especially that big of a number
+but but if they do then they'll need to
+partner with Tesla
+anyways not it's not 10 billion because
+if if they bought it for 10 billion now
+they're on the hook for another 8
+billion a year in losses so uh I don't
+think the timing would be right the
+market cap is yeah it's right at 10
+billion today um and worth noting that
+despite the the the not great earnings
+call um they're still up 6 and 12% on
+the week as of recording this um with a
+a bounce back from after the earnings
+call so there's yeah there's going to be
+some opportunities here okay well this
+is fun I mean again we don't know if
+this real this is uh all just conjecture
+just you know like he said I mean that's
+the one part he said Is Right
+conversations happening all the time
+there's nothing here that we know for
+sure is going to happen it's real yeah
+something is real something is going on
+it could be big it could be small
+yeah okay so we talked about Uber uh and
+they're thinking what they might have to
+do then you've got the you know apple
+and rivan everybody's starting to wonder
+what's going to happen it's going to
+happen very soon we're going to see if
+robot taxi is real how soon we're
+talking about um what's your current
+estimate right now when do you think the
+very first Robo taxi I mean uh it is
+true also true that if El if Tesla
+wanted to to they could turn on robot
+taxi today just existing fsz 12 can do
+this there's nothing you know in a
+confined space they don't want to do
+that quite yet they want to go big and
+they want to go wide and they want to
+get the technology to the point where
+it's safe right uh what's your gu though
+when Elon might Tesla might make this
+decision earlier we discussed that last
+mile where Tesla doesn't know where to
+park uh Cruz had a great solution to
+that I'll park where I'm going to park
+and I'll turn on my flashers and notify
+you on the app that your car is waiting
+for you a block and a half away uh
+that's something that they could do
+today uh would it be the most
+comfortable ride I I don't know I know
+that there have been we've seen some
+shortcomings with crws when uh the
+kilowatts and hm Mars did their race
+through San Francisco in competing FSD
+systems where Crews just got stuck
+that's not comfortable if there were
+cars around that would be especially
+uncomfortable you would feel like a real
+jerk stuck in traffic so when will we
+see the first I mean it it's all going
+to come down to what you define as a
+robo taxi in some regards we've already
+got them with whmo uh and soon again
+with Cruz I imagine um but from Tesla
+when will we see the first Tesla Robo
+taxi I don't know I would say within
+three years if that's not being too
+pessimistic okay yep I appreciate that I
+think the very first pilot will happen
+soon in that probably next year um they
+wouldn't they wouldn't do the 88
+announcement if it wasn't within a year
+afterwards and it could just be a small
+pilot and I I fully expect the Tesla
+will do what Cruz and way was doing with
+the T operation meaning Let It Go but
+then there's somebody there watching in
+case it gets in trouble it'll do it'll
+take
+over we'll see we'll see we'll see I
+okay thank you so much Brian follow him
+on his YouTube channel future oza great
+over there I like it sometimes I show up
+there too thank you so much Brian
+appreciate you bye-bye I've created a
+website that is the most comprehensive
+resource for the Tesla investor please
+check it out Simply go to my website at
+herbert.com
+[Music]

@@ -49,7 +49,6 @@ class YouTubeSentimentAnalyzer:
             video_id = item['id']['videoId']
             video_details = self.get_video_details(video_id)
 
-            # 1800 seconds = 30 minutes
             if not video_details or video_details['duration'] > 1800:
                 continue
 
@@ -137,7 +136,7 @@ class YouTubeSentimentAnalyzer:
 
             videos = self.get_videos_for_keyword(
                 keyword, published_after, published_before, max_results=10)
-            top_videos = videos[:10]  # Get the top 3 videos
+            top_videos = videos[:10]
 
             if top_videos:
                 average_sentiment, video_sentiments = self.calculate_average_sentiment(

@@ -1,12 +1,14 @@
 import requests
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from bs4 import BeautifulSoup
+from transformers import pipeline
 from datetime import datetime, timedelta
 
 
 class NewsSentimentAnalyzer:
     def __init__(self, api_key):
         self.api_key = api_key
-        self.analyzer = SentimentIntensityAnalyzer()
+        self.classifier = pipeline(
+            'sentiment-analysis', model='ProsusAI/finbert')
 
     def get_articles_for_keyword(self, keyword, published_after, published_before, max_results=10):
         url = f"https://newsapi.org/v2/everything?q={keyword}&from={published_after}&to={published_before}&sortBy=popularity&pageSize={max_results}&apiKey={self.api_key}"
@@ -15,7 +17,19 @@ class NewsSentimentAnalyzer:
             return []
 
         articles = response.json().get('articles', [])
-        return articles[:10]  # Restrict to top 3 articles
+        return articles[:3]
+
+    def fetch_full_article(self, url):
+        try:
+            response = requests.get(url)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                paragraphs = soup.find_all('p')
+                full_text = ' '.join([para.get_text() for para in paragraphs])
+                return full_text
+        except Exception as e:
+            print(f"Error fetching full article: {e}")
+        return ""
 
     def analyze_sentiment(self, text):
         sentiment_scores = {
@@ -28,19 +42,21 @@ class NewsSentimentAnalyzer:
 
         lines = text.split('.')
         for line in lines:
-            sentiment = self.analyzer.polarity_scores(line)
-            negative_score = sentiment['neg']
+            if not line.strip():
+                continue
+            result = self.classifier(line)[0]
+            label = result['label']
+            score = result['score']
 
-            if sentiment['compound'] >= 0.05:
-                sentiment_scores['positive'] += 1
-            elif sentiment['compound'] <= -0.05:
-                sentiment_scores['negative'] += 1
+            if label == 'positive':
+                sentiment_scores['positive'] += 1.5
+            elif label == 'negative':
+                sentiment_scores['negative'] += 1.5
+                if score > highest_negative_sentiment:
+                    highest_negative_sentiment = score
+                    top_negative_snippet = line
             else:
                 sentiment_scores['neutral'] += 1
-
-            if negative_score > highest_negative_sentiment:
-                highest_negative_sentiment = negative_score
-                top_negative_snippet = line
 
         total = sum(sentiment_scores.values())
         if total > 0:
@@ -59,8 +75,9 @@ class NewsSentimentAnalyzer:
         article_sentiments = []
 
         for article in articles:
-            text = article['content'] or article['description'] or ""
-            sentiment, top_negative_snippet = self.analyze_sentiment(text)
+            full_text = self.fetch_full_article(
+                article['url']) or article['content'] or article['description']
+            sentiment, top_negative_snippet = self.analyze_sentiment(full_text)
             article_sentiments.append({
                 'title': article['title'],
                 'sentiment': sentiment,
@@ -77,7 +94,7 @@ class NewsSentimentAnalyzer:
 
     def display_average_sentiment_per_day(self, keyword):
         today = datetime.utcnow()
-        days = [today - timedelta(days=i) for i in range(10)]
+        days = [today - timedelta(days=i) for i in range(11)]
 
         for day in days:
             published_after = day.replace(
@@ -102,3 +119,25 @@ class NewsSentimentAnalyzer:
                 print(f"Date: {day.strftime('%Y-%m-%d')}")
                 print("No suitable articles found.")
                 print("----------")
+
+    def test_single_article_by_keyword(self, keyword):
+        today = datetime.utcnow()
+        published_after = (today - timedelta(days=1)).replace(
+            hour=0, minute=0, second=0).isoformat("T") + "Z"
+        published_before = today.replace(
+            hour=0, minute=0, second=0).isoformat("T") + "Z"
+
+        articles = self.get_articles_for_keyword(
+            keyword, published_after, published_before, max_results=1)
+        if articles:
+            article = articles[0]
+            full_text = self.fetch_full_article(article['url'])
+            if not full_text:
+                print("No suitable articles found.")
+                return
+            sentiment, top_negative_snippet = self.analyze_sentiment(full_text)
+            print(f"Title: {article['title']}")
+            print(f"Sentiment: {sentiment}")
+            print(f"Top Negative Snippet: {top_negative_snippet}")
+        else:
+            print("No suitable articles found.")
