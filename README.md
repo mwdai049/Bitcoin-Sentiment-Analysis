@@ -1,4 +1,4 @@
-# Stock Market Sentiment Analysis
+# Bitcoin Stock Sentiment Analysis
 
 This project aims to analyze the sentiment of news articles and YouTube videos related to a specific stock (Bitcoin in this case) and correlate it with the stock's price over a period of time. The project uses sentiment analysis models and various APIs to gather data, process it, and visualize the results.
 
@@ -49,11 +49,12 @@ The project fetches and analyzes sentiment from news articles and YouTube videos
    `pip install -r requirements.txt`
 
 3. Set up your environment variables:
-   Create a .env file in the root directory.
-   Create your API keys for the [News API] (https://newsapi.org/) and [YouTube Data API] (https://console.developers.google.com/).
-   Add your API keys to the .env file:
-   `YOUTUBE_API_KEY=replace_with_your_youtube_api_key`
-   `NEWS_API_KEY=replace_with_your_news_api_key`
+
+- Create a .env file in the root directory.
+- Create your API keys for the [News API] (https://newsapi.org/) and [YouTube Data API] (https://console.developers.google.com/).
+- Add your API keys to the .env file:
+  - `YOUTUBE_API_KEY=replace_with_your_youtube_api_key`
+  - `NEWS_API_KEY=replace_with_your_news_api_key`
 
 4. Place your Bitcoin CSV data file in the /data directory and ensure it is named BTC-USD.csv.
 
@@ -74,10 +75,10 @@ The script will:
 
 ## Data Sources
 
-News Articles: Fetched using the [News API] (https://newsapi.org/).
-YouTube Videos: Fetched using the [YouTube Data API] (https://console.developers.google.com/).
-Sentiment Analysis Model: Using the [ProsusAI FinBERT model] (https://huggingface.co/ProsusAI/finbert).
-Stock Prices: Loaded from a CSV file (BTC-USD.csv).
+- News Articles: Fetched using the [News API] (https://newsapi.org/).
+- YouTube Videos: Fetched using the [YouTube Data API] (https://console.developers.google.com/).
+- Sentiment Analysis Model: Using the [ProsusAI FinBERT model] (https://huggingface.co/ProsusAI/finbert).
+- Stock Prices: Loaded from a CSV file (BTC-USD.csv).
 
 ## Project Structure
 
