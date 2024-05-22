@@ -17,7 +17,17 @@ class NewsSentimentAnalyzer:
             return []
 
         articles = response.json().get('articles', [])
-        return articles[:3]
+        valid_articles = []
+
+        for article in articles[:max_results]:
+            full_text = self.fetch_full_article(article['url'])
+            if full_text:
+                article['full_text'] = full_text
+                valid_articles.append(article)
+                if len(valid_articles) >= 5:
+                    break
+
+        return valid_articles
 
     def fetch_full_article(self, url):
         try:
@@ -32,11 +42,7 @@ class NewsSentimentAnalyzer:
         return ""
 
     def analyze_sentiment(self, text):
-        sentiment_scores = {
-            'positive': 0,
-            'neutral': 0,
-            'negative': 0
-        }
+        sentiment_scores = {'positive': 0, 'neutral': 0, 'negative': 0}
         highest_negative_sentiment = -1
         top_negative_snippet = ""
 
@@ -66,18 +72,13 @@ class NewsSentimentAnalyzer:
         return sentiment_scores, top_negative_snippet
 
     def calculate_average_sentiment(self, articles):
-        sentiment_totals = {
-            'positive': 0,
-            'neutral': 0,
-            'negative': 0
-        }
+        sentiment_totals = {'positive': 0, 'neutral': 0, 'negative': 0}
         count = len(articles)
         article_sentiments = []
 
         for article in articles:
-            full_text = self.fetch_full_article(
-                article['url']) or article['content'] or article['description']
-            sentiment, top_negative_snippet = self.analyze_sentiment(full_text)
+            sentiment, top_negative_snippet = self.analyze_sentiment(
+                article['full_text'])
             article_sentiments.append({
                 'title': article['title'],
                 'sentiment': sentiment,
@@ -95,13 +96,13 @@ class NewsSentimentAnalyzer:
     def display_average_sentiment_per_day(self, keyword):
         today = datetime.utcnow()
         days = [today - timedelta(days=i) for i in range(11)]
+        news_results = []
 
         for day in days:
             published_after = day.replace(
                 hour=0, minute=0, second=0).isoformat("T") + "Z"
             published_before = (day + timedelta(days=1)).replace(hour=0,
                                                                  minute=0, second=0).isoformat("T") + "Z"
-
             articles = self.get_articles_for_keyword(
                 keyword, published_after, published_before, max_results=10)
             if articles:
@@ -115,10 +116,21 @@ class NewsSentimentAnalyzer:
                     print(f"  Sentiment: {article['sentiment']}")
                     print(f"  Top Negative Snippet: {article['top_snippet']}")
                     print("----------")
+                news_results.append({
+                    'date': day.strftime('%Y-%m-%d'),
+                    'average_sentiment': average_sentiment,
+                    'top_articles': article_sentiments
+                })
             else:
                 print(f"Date: {day.strftime('%Y-%m-%d')}")
                 print("No suitable articles found.")
+                news_results.append({
+                    'date': day.strftime('%Y-%m-%d'),
+                    'average_sentiment': {'positive': 0, 'neutral': 0, 'negative': 0},
+                })
                 print("----------")
+
+        return news_results
 
     def test_single_article_by_keyword(self, keyword):
         today = datetime.utcnow()

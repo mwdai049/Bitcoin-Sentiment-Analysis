@@ -15,25 +15,24 @@ youtube_data = [
     # ('2024-05-20', {'positive': 0.0, 'neutral': 88.14, 'negative': 11.86}),
 ]
 
-
 news_data = [
-    ('2024-05-10', {'positive': 22.90, 'neutral': 57.42, 'negative': 19.68}),
-    ('2024-05-11', {'positive': 14.76, 'neutral': 68.10, 'negative': 17.14}),
-    ('2024-05-12', {'positive': 9.96, 'neutral': 76.43, 'negative': 13.60}),
-    ('2024-05-13', {'positive': 16.52, 'neutral': 71.38, 'negative': 12.09}),
-    ('2024-05-14', {'positive': 19.63, 'neutral': 69.45, 'negative': 10.92}),
-    ('2024-05-15', {'positive': 22.30, 'neutral': 55.84, 'negative': 21.85}),
-    ('2024-05-16', {'positive': 29.92, 'neutral': 50.16, 'negative': 19.91}),
-    ('2024-05-17', {'positive': 33.20, 'neutral': 36.63, 'negative': 30.17}),
-    ('2024-05-18', {'positive': 31.44, 'neutral': 56.86, 'negative': 11.69}),
-    ('2024-05-19', {'positive': 20.0, 'neutral': 80.0, 'negative': 0.0})
+    ('2024-05-10', {'positive': 22.54, 'neutral': 60.87, 'negative': 16.59}),
+    ('2024-05-11', {'positive': 14.44, 'neutral': 73.44, 'negative': 12.12}),
+    ('2024-05-12', {'positive': 15.94, 'neutral': 73.43, 'negative': 10.62}),
+    ('2024-05-13', {'positive': 21.15, 'neutral': 66.05, 'negative': 12.80}),
+    ('2024-05-14', {'positive': 33.53, 'neutral': 49.93, 'negative': 16.55}),
+    ('2024-05-15', {'positive': 25.30, 'neutral': 58.97, 'negative': 15.73}),
+    ('2024-05-16', {'positive': 25.42, 'neutral': 53.67, 'negative': 20.91}),
+    ('2024-05-17', {'positive': 29.80, 'neutral': 55.22, 'negative': 14.98}),
+    ('2024-05-18', {'positive': 29.95, 'neutral': 56.33, 'negative': 13.71}),
+    ('2024-05-19', {'positive': 30.97, 'neutral': 58.59, 'negative': 10.45})
 ]
 
 
 stock_prices = pd.DataFrame({
-    'Date': ['2024-05-10', '2024-05-13', '2024-05-14', '2024-05-15', '2024-05-16', '2024-05-17'],
-    # 'Close/Last': [60792.78, 60793.71, 61448.39, 62901.45, 61552.79, 66267.49, 65231.58, 67051.88, 66940.80, 66685.34]
-    'Close/Last': [53.99, 56.19, 54.78, 58.82, 58.02, 59.73]
+    'Date': ['2024-05-10', '2024-05-11', '2024-05-12', '2024-05-13', '2024-05-14', '2024-05-15', '2024-05-16', '2024-05-17', '2024-05-18', '2024-05-19', '2024-05-20'],
+    'Close/Last': [60792.78, 60793.71, 61448.39, 62901.45, 61552.79, 66267.49, 65231.58, 67051.88, 66940.80, 66685.34, 71473.60]
+    # 'Close/Last': [53.99, 56.19, 54.78, 58.82, 58.02, 59.73]
 })
 
 
@@ -45,6 +44,13 @@ def plot_sentiment_and_stock_prices(news_data, youtube_data, stock_prices):
     youtube_neutral = [item[1]['neutral'] for item in youtube_data]
     news_negative = [item[1]['negative'] for item in news_data]
     youtube_negative = [item[1]['negative'] for item in youtube_data]
+
+    avg_positive = [(news + youtube) / 2 for news,
+                    youtube in zip(news_positive, youtube_positive)]
+    avg_neutral = [(news + youtube) / 2 for news,
+                   youtube in zip(news_neutral, youtube_neutral)]
+    avg_negative = [(news + youtube) / 2 for news,
+                    youtube in zip(news_negative, youtube_negative)]
 
     stock_prices['Date'] = pd.to_datetime(stock_prices['Date'])
     stock_prices.set_index('Date', inplace=True)
@@ -65,38 +71,43 @@ def plot_sentiment_and_stock_prices(news_data, youtube_data, stock_prices):
     axs[0].grid(True)
     stock_min = stock_values.min()
     stock_max = stock_values.max()
-    axs[0].set_ylim(0,
-                    stock_max + 10)
+    # axs[0].set_ylim(0,
+    #                 stock_max + 10)
 
     # Plot positive sentiment
     axs[1].plot(x, news_positive, label='News Positive', marker='o', color='g')
     axs[1].plot(x, youtube_positive, label='YouTube Positive',
                 marker='x', color='r')
+    axs[1].plot(x, avg_positive, label='Average Positive',
+                marker='D', color='m')
     axs[1].set_ylabel('Positive Sentiment (%)')
     axs[1].set_title('Positive Sentiment')
     axs[1].legend()
     axs[1].grid(True)
-    axs[1].set_ylim(bottom=0)
+    # axs[1].set_ylim(bottom=0)
 
     # Plot neutral sentiment
     axs[2].plot(x, news_neutral, label='News Neutral', marker='o', color='g')
     axs[2].plot(x, youtube_neutral, label='YouTube Neutral',
                 marker='x', color='r')
+    axs[2].plot(x, avg_neutral, label='Average Neutral', marker='D', color='m')
     axs[2].set_ylabel('Neutral Sentiment (%)')
     axs[2].set_title('Neutral Sentiment')
     axs[2].legend()
     axs[2].grid(True)
-    axs[2].set_ylim(bottom=0)
+    # axs[2].set_ylim(bottom=0)
 
     # Plot negative sentiment
     axs[3].plot(x, news_negative, label='News Negative', marker='o', color='g')
     axs[3].plot(x, youtube_negative, label='YouTube Negative',
                 marker='x', color='r')
+    axs[3].plot(x, avg_negative, label='Average Negative',
+                marker='D', color='m')
     axs[3].set_ylabel('Negative Sentiment (%)')
     axs[3].set_title('Negative Sentiment')
     axs[3].legend()
     axs[3].grid(True)
-    axs[3].set_ylim(bottom=0)
+    # axs[3].set_ylim(bottom=0)
 
     plt.xticks(x, dates, rotation='vertical')
     plt.xlabel('Date')
