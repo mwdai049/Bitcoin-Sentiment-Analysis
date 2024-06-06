@@ -1,5 +1,6 @@
 # Bitcoin Stock Sentiment Analysis
-Collabortation between Joyce Lu, Wan-Rong Leung, and Monica Dai
+Collabortation between Joyce Lu, Wan-Rong Leung, and Monica Dai. 
+
 This project aims to analyze the sentiment of news articles and YouTube videos related to Bitcoin and correlate it with its price (BTC-USD) over a period of time. The project uses sentiment analysis models and various APIs to gather data, process it, and visualize the results.
 
 ## Table of Contents
